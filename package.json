@@ -1,0 +1,22 @@
+{
+  "name": "flowmassage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tom-wells/flowmassage.git"
+  },
+  "author": "Tom Wells",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tom-wells/flowmassage/issues"
+  },
+  "homepage": "https://github.com/tom-wells/flowmassage#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
