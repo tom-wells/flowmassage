@@ -18,8 +18,8 @@ var ghpages = require("gh-pages")
 gulp.task('css', function() {
     return gulp.src([
         "src/css/reset.css",
-        "src/css/typography.css",
-        "src/css/app.css" 
+        "src/css/app.css",
+        "src/css/typography.css"
     ])
     .pipe(sourcemaps.init())
     .pipe(
@@ -60,6 +60,10 @@ gulp.task("fonts", function() {
     .pipe(gulp.dest("dist/fonts"))
 })
 
+gulp.task("scripts", function() {
+    return gulp.src("src/scripts/*")
+    .pipe(gulp.dest("dist/scripts"))
+})
 
 gulp.task('watch', function () {
 
@@ -73,6 +77,8 @@ gulp.task('watch', function () {
     gulp.watch("src/css/*", ["css"])
     gulp.watch("src/fonts/*", ["fonts"])
     gulp.watch("src/img/*", ["images"])
+    gulp.watch("src/scripts/*", ["scripts"])
+
 })
 
 
@@ -80,5 +86,5 @@ gulp.task("deploy", function() {
     ghpages.publish("dist")
 })
 
-gulp.task('default', ["html", "css", "fonts", "images", "watch"])
+gulp.task('default', ["html", "css", "fonts", "images", "scripts", "watch"])
     // we wnat to run "sass css/app.scss app.css --watch"
