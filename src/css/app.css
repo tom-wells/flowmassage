@@ -2,8 +2,8 @@
 
 
 :root {
-    --body-bg-color:rgb(7, 190, 187);
-    --type-color: white;
+    --body-bg-color:#1fd5b4;
+    --type-color:#ffffff;
     --line-global: 20px;
    
 }
@@ -90,7 +90,6 @@ section {
 
 }
 .logo {
-    width:600px;
     height:300px;
 
     padding:var(--line-global*2);
@@ -105,6 +104,7 @@ img {
 
 
 h3 {
+    cursor: default;
     max-width:500px;
     line-height:1.4;
     color:var(--body-bg-color);

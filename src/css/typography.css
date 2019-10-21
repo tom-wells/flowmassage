@@ -1,0 +1,24 @@
+@font-face {
+    font-family:"Syne Bold";
+    src: url(/fonts/Syne-Bold.woff) format("woff"),
+         url(/fonts/Syne-Bold.woff2) format("woff2"),
+         url(/fonts/Syne-Bold.eot) format("eot");
+
+}
+
+:root {
+    --header-font:"Syne Bold", serif;
+    --header-size:24px;
+
+}
+
+a {
+    text-decoration:none;
+    color:var(--type-color);
+}
+
+h1, h2, h3 ,a {
+    font-family:var(--header-font);
+    font-size:var(--header-size);
+ 
+}
