@@ -39,6 +39,8 @@ canvas {
 .menu {
     height:100vh;
     position:fixed;
+    top:0;
+    bottom:0;
     right:0;
     transition: 1s ease;
     transform:translateX(100%);
@@ -280,10 +282,7 @@ textarea {
     right:var(--line-global);
     z-index:3;
     }
-    .wave {
-
-        min-height: -webkit-fill-available;
-    }
+  
     .container {
         padding:0;
         margin-bottom:var(--line-global-2);
