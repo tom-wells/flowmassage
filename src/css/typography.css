@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
+
+
 @font-face {
     font-family:"Syne Bold";
     src: url(/fonts/Syne-Bold.woff) format("woff"),
@@ -8,8 +11,26 @@
 
 :root {
     --header-font:"Syne Bold", serif;
-    --header-size:24px;
+    --header-size:36px;
+    --sub-header-size:24px;
+    --body-font: 'Work Sans', sans-serif;
+    --body-size: 16px;
 
+    --bold-weight: 800;
+
+
+
+}
+
+.bold {
+    font-weight:var(--bold-weight);
+}
+
+body, 
+input,
+textarea {
+    font-family:var(--body-font);
+    font-size:var(--body-size);
 }
 
 a {
@@ -17,8 +38,53 @@ a {
     color:var(--type-color);
 }
 
-h1, h2, h3 ,a {
+.info-button {
+    font-family:var(--body-font);
+    font-weight:var(--bold-weight);
+}
+
+nav a {
     font-family:var(--header-font);
     font-size:var(--header-size);
+}
+
+h4, .time {
+    font-family:var(--body-font);
+    font-size:var(--sub-header-size);
+    font-weight:400;
+}
+
+h3
+ {
+font-family:var(--header-font);
+font-size:var(--sub-header-size);
+line-height:1.6;
+
+}
+
+
+
+h1, h2 {
+    font-family:var(--header-font);
+    font-size:var(--header-size);
+    margin:0;
  
+}
+
+.book,
+.submit {
+    font-family:var(--header-font)
+
+}
+
+@media (max-width:550px) {
+    h1, h2 {
+        font-size:10vw;
+    }
+    p { 
+        font-size:5vw;
+    }
+    nav a {
+        font-size:10vw;
+    }
 }

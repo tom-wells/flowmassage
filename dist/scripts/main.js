@@ -1,15 +1,15 @@
 const infoOpen = document.querySelector(".info-button .info")
 const infoClose = document.querySelector(".info-button .close")
-const aboutSection = document.querySelector(".about")
+const navMenu = document.querySelector(".menu")
 
 infoOpen.addEventListener('click', function() {
-    aboutSection.classList.add("show")
+    navMenu.classList.add("open")
     infoClose.classList.remove("hidden")
     infoOpen.classList.add("hidden")
 });
 
 infoClose.addEventListener('click', function () {
-    aboutSection.classList.remove("show")
+    navMenu.classList.remove("open")
     infoOpen.classList.remove("hidden")
     infoClose.classList.add("hidden")
 
